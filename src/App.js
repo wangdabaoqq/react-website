@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+// import { Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
+import "antd/dist/antd.css";
+// import { Button } from 'antd'
+import Home from './views/Home'
+import Footer from './views/Footer'
 class App extends Component {
+  state = {
+    loading: false
+  }
+  aaa = () => {
+    console.log(111)
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <Home>
+          <Switch>
+            <Route path="/aaa" component={Footer} />
+            <Route path="/" render={() => (
+              <Switch>
+                <Redirect to="/home"></Redirect>
+              </Switch>
+            )} />
+          </Switch>
+        </Home>
+      </Router>
     );
   }
 }
