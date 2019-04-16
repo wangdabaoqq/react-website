@@ -59,20 +59,20 @@ export default class Header extends React.Component {
       </header>
       <Carousel  effect="fade" >
       <div>
-      <img
+      <img className="saasWid"
           src="https://i3.meishichina.com/attachment/mofang/2019/02/28/20190228155134869390510169539.jpg"
           alt=""
         />
       </div>
-      <div> <img
+      <div> <img className="saasWid"
           src="https://i3.meishichina.com/attachment/mofang/2019/02/28/20190228155134869390510169539.jpg"
           alt=""
         /></div>
-      <div> <img
+      <div> <img className="saasWid"
           src="https://i3.meishichina.com/attachment/mofang/2019/02/28/20190228155134869390510169539.jpg"
           alt=""
         /></div>
-      <div> <img
+      <div> <img className="saasWid"
           src="https://i3.meishichina.com/attachment/mofang/2019/02/28/20190228155134869390510169539.jpg"
           alt=""
         /></div>

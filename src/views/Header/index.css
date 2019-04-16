@@ -15,6 +15,14 @@
   float: left;
   /* margin: 0px 20px 0; */
 }
+.ant-carousel {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+.saasWid {
+  width: 100%;
+}
 .ant-menu-horizontal {
   line-height: 60px;
   margin-left: 45%;
